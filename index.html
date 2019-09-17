@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Schlafrock Official</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>  -->
+
+<!-- menu -->
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo"><img src="logo2_small.png">  </td>
+                <td id="navigation">
+                    <a href="#bio">o nas</a>
+                    <a href="#events">koncetry</a>
+                    <a href="#music">muzyka</a>
+                    <a href="#photo">zdjęcia</a>
+                    <a href="#contact">kontakt</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+<!-- top_part -->
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Niszczą nadzieję Pudziana na scenie!</h1>
+                <!-- <button class="btn_one">Hire Me</button><br> -->
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.facebook.com/SchlafRockOFFICIAL/"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://www.youtube.com/channel/UC0pvci8_-7_4n9HaD-CIgZw"><i class="fab fa-youtube"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.instagram.com/_schlafrock_/"><i class="fab fa-instagram"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated slideInRight" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    
+    <div id="bio">
+            <h1>o nas</h1>
+            <p>
+                SchlafRock wywodzi się z Poznania. Styl muzyczny to synteza ogólnie pojętego rocka i metalu wraz z hip hopowym wokalem. Początki zespołu sięgają 2013r. To właśnie w tym roku grupa znajomych została zaproszona do wspólnego grania z inicjatywy Kamila. Od tamtego czasu zmieniło się prawie wszystko, została tylko nazwa, a z pierwotnego SR pozostał jedynie Kamil. Skład SchlafRockowej ekipy ewoluował na przestrzeni lat. W 2015r. dołączył Kacper, w 2017r. Sławek oraz Marcin. To właśnie w 2017r. SchlafRock zaczął przybierać formę jaką dziś znacie. Pierwsze utwory zaczęły nabierać obecnego brzmienia, co przybliżało wizję wydania pierwszego albumu. W kwietniu 2018r. zawitaliśmy do Przemka Wejmanna w Perlazza Studio gdzie powstała nasza EPka. Niedługo później dołączył do nas Czarek dopełniając ekipę SR. W niezmienionym od tamtej pory składzie tworzymy i gramy dla Was do dziś. 29 Październik 2018r. - to właśnie wtedy światło dzienne ujrzał nasz teledysk do kawałka „Rydwan mój”. Obecnie koncertujemy i pracujemy nad materiałem na kolejny album. 
+            </p>
+    </div>
+    <div id="events">
+            <h1>koncerty</h1>
+            <p>
+                28 września 2067 - Mars<br>
+                15 października 2067 - Jowisz<br>
+                11 listopada 2067 - Jowisz<br>
+                16 grudnia 2067 - Jowisz<br>
+                12 czerwca 2068 - Ziemia, u Bazyla<br>
+            </p>
+    </div>
+
+
+    <div id="music">
+            <h1>muzyka</h1>
+            <p>
+                <table id="music">
+                    <tr>
+                        <td id="music" class="animated slideInLeft" style="animation-delay:2s;">
+                                <img src="https://i.scdn.co/image/12a526ea906bdba4a1d55e2dc0842398aafa2733">
+                        </td>
+                        <td id="rightImage_music" class="animated jackInTheBox" style="animation-delay:2.2s;">
+                            <iframe src="https://open.spotify.com/embed/album/1zIFlRvEddMJs5iC1aVARO" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </td>
+                    </tr>
+                </table>
+                   
+            </p>
+            <p>
+                    
+            </p>
+        </div>
+
+    <div id="photo">
+        <h1>zdjęcia</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="">
+            <img onclick="magnify($(this).attr('src'))" src="photos/0002.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="photos/0006.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="photos/0008.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="photos/0009.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="photos/0011.jpg">
+            <!-- <img onclick="magnify($(this).attr('src'))" src="photos/0012.jpg"> -->
+            <img onclick="magnify($(this).attr('src'))" src="photos/0013.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="photos/0014.jpg">
+        </div>
+    </div>
+
+    
+    <div id="contact">
+        <h1>kontakt</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +48-te-numery-8-i-4 </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; schlafrock4ever@gmail.com</td>
+                                </tr>
+                                 <!-- <tr>
+                                    <td><i class="fas fa-fax"></i> &nbsp; +1 234 567 8910</td>
+                                </tr> -->
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Wałcz!,<br>
+                                        to jest twoja bitwa,<br>
+                                        nie pozwól by ktokolwiek <br>
+                                        za Ciebie ją wygrał!
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- <td>
+                                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.facebook.com/SchlafRockOFFICIAL/"><i class="fab fa-facebook"></i></a></td>
+                                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://www.youtube.com/channel/UC0pvci8_-7_4n9HaD-CIgZw"><i class="fab fa-youtube"></i></a></td>
+                                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.instagram.com/_schlafrock_/"><i class="fab fa-instagram"></i></a></td>
+                                    </td> -->
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <!-- <form>
+                            <input type="text" placeholder="imię" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="wiadomość" required rows="5"></textarea><br>
+                            <button class="btn_one">wyślij ></button>
+                        </form>  -->
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <!-- <div id="footer">
+        made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
+    </div> -->
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
