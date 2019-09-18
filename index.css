@@ -34,7 +34,7 @@ body {
 }
 header {
     width:92vw;
-    padding:1vh 4vw;
+    padding:6vh 4vw;
     position:fixed;
     font-weight:bold;
     background:transparent;
@@ -110,15 +110,6 @@ header table {
     width:50%;
 }
 
-#album_part {
-    background: #000;
-    width:100%;
-    height:300px;
-    border:2vh solid #000;
-}
-#album_part tr td{
-    width:50%;
-}
 
 #about {
     width:84% !important;
@@ -144,20 +135,22 @@ header table {
     text-align:left;
 }
 .social {
+    height: 50px;
+    width: 50px;
     color:rgb(252, 113, 0);
-    font-size:23px;
-    padding:12px 17px;
-    border-radius:50%;
+    font-size:50px;
+    padding:25px 25px;
+    border-radius:0%;
     background:transparent;
     transition:0.4s ease-in-out;
-    font-weight:bold;
-    margin:0px 8px;
+    /* font-weight:bold; */
+    margin:0px 0px;
 }
 .social:hover { 
     cursor: pointer;
     color:#fff;
     background:rgb(252, 113, 0);
-    box-shadow:0px 10px 30px rgba(252, 113, 0, 0.8);
+    /* box-shadow:0px 10px 10px rgba(252, 113, 0, 0.8); */
 }
 .btn_one {
     font-size:18px;
@@ -197,7 +190,8 @@ header table {
 
 #music {
     width:92vw;
-    padding:4vh 4vw;
+    height:88vh;
+    padding:8vh 4vw;
     font-weight:bold;
 }
 #music h1 {
@@ -206,26 +200,28 @@ header table {
     width:6%;
 }
 #music img {
-    width:500px;
+    width:350px;
     height:auto;
     margin:4.5% 0px;
     transition:0.4s ease-in-out;
 }
 
 #music table {
+    background: #000;
     width:100%;
-    height:5%;
-    margin-top:1vh;
+    height:1%;
+    /* margin-top:1vh; */
 }
 #music table tr td {
     width:20% !important;
-    height:5%;
+    height:1%;
     text-align:center;
 }
 
 #events {
     width:92vw;
-    padding:6vh 4vw;
+    height:95vh;
+    padding:8vh 4vw;
     font-weight:bold;
 }
 #events h1 {
@@ -236,7 +232,8 @@ header table {
 
 #photo {
     width:92vw;
-    padding:6vh 4vw;
+    height:80vh;
+    padding:8vh 4vw;
     font-weight:bold;
 }
 #photo h1 {
@@ -247,34 +244,54 @@ header table {
 
 #photos {
     width:100%;
-    columns:3;
-    column-gap:4%;
+    height:90%;
+    columns:6;
+    column-gap:5%;
     z-index:1;
     transition:0.4s ease-in-out;
 }
 #photos img {
-    width:100%;
+    width:90%;
     height:auto;
     margin:4.5% 0px;
     transition:0.4s ease-in-out;
 }
+
 #photos img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 #bio {
     width:92vw;
-    padding:6vh 4vw;
+    height:95vh;
+    padding:8vh 4vw;
     font-weight:bold;
 }
 #bio h1 {
     padding:5px 0px;
     border-bottom:4px solid rgb(252, 113, 0);
-    width:8%;
+    width:15%;
 }
+
+#bio table {
+    background: #fff;
+    width:92%;
+    height:0.5%;
+    margin-top:1vh;
+}
+#bio table tr td {
+    width:20% !important;
+    height:0.1%;
+    text-align:center;
+}
+#bio img {
+    border-radius: 50%;
+}
+
 #contact {
     width:92vw;
-    padding:6vh 4vw;
+    height:95vh;
+    padding:8vh 4vw;
 }
 #contact h1 {
     padding:5px 0px;
@@ -361,13 +378,13 @@ button:focus {
     height:5px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #000000; 
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0); 
+    background: rgba(252, 113, 0, 0.8); 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0,0.8); 
+    background: rgb(252, 113, 0); 
 }
 
 @media (max-width: 1000px){
