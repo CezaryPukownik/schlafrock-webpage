@@ -47,11 +47,12 @@ header table {
 }
 
 #logo {
-    width:20%;
+    width:40%;
 }
 
 #navigation {
-    width:80%;
+    padding: 0px !important;
+    width:60%;
 }
 
 #magnify {
@@ -64,6 +65,7 @@ header table {
     flex-direction: column;
     justify-content:center;
 }
+
 #magnify h1 {
     position:absolute;
     top:0;
@@ -72,10 +74,12 @@ header table {
     color:#fff;
     transition:0.4s ease-in-out;
 }
+
 #magnify h1:hover{
     color:rgb(252, 113, 0);
     cursor:pointer;
 }
+
 #img_here {
     width:90%;
     height:90%;
@@ -83,57 +87,53 @@ header table {
     background-repeat:no-repeat !important;
     margin:0px auto;
 }
+
 #logo {
     font-size:24px;
     color:rgb(252, 113, 0);
 }
+
 #navigation {
     text-align:right;
 }
+
 #navigation a {
     color:inherit;
     text-decoration:none;
     padding:5px 10px;
     border-bottom:2px solid transparent;
-    margin-left:4vw;
+    margin-left:1vw;   
     transition:0.4s ease-in-out;
 }
+
 #navigation a:hover{
-    border-bottom:2px solid #fff;
+    border-bottom:2px solid #000;
 }
+/* Sekcja Pierwsza - Przedstawienie */
+
+#main {
+    
+}
+
 #top_part {
     background: #000;
     width:100%;
+    height: 100vh;
     border:2vh solid #000;
 }
 #top_part tr td{
     width:50%;
 }
 
-
-#about {
-    width:84% !important;
+#rightImage {
+    width:100%;
     height:95vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:left;
-    background: #000;
-    padding:0px 8%;
+    background:linear-gradient(0deg,rgba(252, 113, 0, 0.8),rgba(252, 113, 0, 0.8)),url("photos/0007.jpg") center center;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
-#about h1 {
-    font-size:45px;
-    color:#fff;
-    word-wrap:break-word;
-}
-#about table {
-    width:70%;
-    margin-top:4vh;
-}
-#about table tr td {
-    width:20% !important;
-    text-align:left;
-}
+
+/* Ikonki */
 .social {
     height: 50px;
     width: 50px;
@@ -152,6 +152,8 @@ header table {
     /* background:rgb(252, 113, 0); */
     /* box-shadow:0px 10px 10px rgba(252, 113, 0, 0.8); */
 }
+
+/* Przycisk */
 .btn_one {
     font-size:18px;
     font-family: 'Poppins', sans-serif;
@@ -172,26 +174,126 @@ header table {
     background:rgb(252, 113, 0);
 }
 
-#rightImage {
-    width:100%;
+
+/* O nas */
+#about {
+    width:84% !important;
     height:95vh;
-    background:linear-gradient(0deg,rgba(252, 113, 0, 0.8),rgba(252, 113, 0, 0.8)),url("photos/0007.jpg") center center;
-    background-size:cover;
-    background-repeat:no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+    background: #000;
+    padding:0px 8%;
+}
+#about h1 {
+    font-size:45px;
+    color:#fff;
+    word-wrap:break-word;
+}
+#about table {
+    width:100%;
+    margin-top:4vh;
+}
+#about table tr td {
+    width:20% !important;
+    text-align:left;
 }
 
-#rightImage_music {
-    width:100%;
+#bio {
+    width:92vw;
     height:95vh;
-    background:linear-gradient(0deg,rgba(252, 113, 0, 0.8),rgba(252, 113, 0, 0.8)),url("photos/0007.jpg") center center;
-    background-size:cover;
-    background-repeat:no-repeat;
+    padding:4vh 4vw 4vh 4vw;
+    font-weight:bold;
+    text-align: justify;
+}
+#bio h1 {
+    padding:5px 0px;
+    border-bottom:4px solid rgb(252, 113, 0);
+    width:15%;
 }
 
+#bio table {
+    width: 100%;
+}
+
+#bio table tr td {
+    padding: 4vh 2vw 4vh 2vw;
+    text-align:center; !important; 
+}
+#bio img {
+    border-radius: 50%;
+}
+
+#bio a {
+    padding:4vh 1vw 4vh 1vw !important; 
+    color:rgb(252, 113, 0) !important; 
+    text-decoration:none;
+}
+
+#bio i {
+    color:rgb(252, 113, 0) !important; 
+    text-decoration:none;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+/* 
+
+#contact {
+    padding:4vh 4vw 0vh 4vw;
+}
+#contact h1 {
+    padding:5px 0px;
+    border-bottom:4px solid rgb(252, 113, 0);
+    width:10%;
+}
+#contact table {
+    width:100%;
+}
+#contact table tr td {
+    width:50%;
+} */
+
+
+
+/* Koncerty */
+#events {
+    background: #000;
+    color: #fff;
+    width:92vw;
+    height:95vh;
+    padding:4vh 4vw 0vh 4vw;
+    font-weight:bold;
+}
+#events h1 {
+    padding:5px 0px;
+    border-bottom:4px solid rgb(252, 113, 0);
+    width:6%;
+}
+
+#events table {
+    width: 100%;
+    height: 70%;
+}
+
+#events table tr td {
+    color: #fff;
+    border-bottom:4px solid rgb(252, 113, 0);
+    text-align:center;
+}
+
+
+/* Muzyka */
 #music {
     width:92vw;
     height:88vh;
-    padding:8vh 4vw;
+    padding:4vh 4vw 0vh 4vw;
     font-weight:bold;
 }
 #music h1 {
@@ -207,33 +309,37 @@ header table {
 }
 
 #music table {
-    background: #000;
     width:100%;
-    height:1%;
-    /* margin-top:1vh; */
-}
-#music table tr td {
-    width:20% !important;
-    height:1%;
+    height:80%;
     text-align:center;
 }
 
-#events {
-    width:92vw;
-    height:95vh;
-    padding:8vh 4vw;
-    font-weight:bold;
-}
-#events h1 {
-    padding:5px 0px;
-    border-bottom:4px solid rgb(252, 113, 0);
-    width:6%;
+#music table tr td {
+    width:20% !important;
+    text-align:center;
 }
 
+#black_td {
+    background: #000;
+}
+
+#orange_td {
+    background: rgba(252, 113, 0, 0.8);
+}
+
+#rightImage_music {
+    width:100%;
+    height:50vh;
+    background:linear-gradient(0deg,rgba(252, 113, 0, 0.8),rgba(252, 113, 0, 0.8)),url("photos/0007.jpg") center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+/* Zdjecia */
 #photo {
     width:92vw;
-    height:80vh;
-    padding:8vh 4vw;
+    height:95vh;
+    padding:4vh 4vw 0vh 4vw;
     font-weight:bold;
 }
 #photo h1 {
@@ -242,6 +348,7 @@ header table {
     width:6%;
 }
 
+/* Zdjecia - Mozaika */
 #photos {
     width:100%;
     height:90%;
@@ -261,58 +368,9 @@ header table {
     transform: scale(1.1);
     cursor: pointer;
 }
-#bio {
-    width:92vw;
-    height:95vh;
-    padding:8vh 4vw;
-    font-weight:bold;
-}
-#bio h1 {
-    padding:5px 0px;
-    border-bottom:4px solid rgb(252, 113, 0);
-    width:15%;
-}
 
-#bio table {
-    background: #fff;
-    width:92%;
-    height:0.5%;
-    margin-top:1vh;
-}
-#bio table tr td {
-    width:20% !important;
-    height:0.1%;
-    text-align:center;
-}
-#bio img {
-    border-radius: 50%;
-}
 
-#contact {
-    width:92vw;
-    height:95vh;
-    padding:8vh 4vw;
-}
-#contact h1 {
-    padding:5px 0px;
-    border-bottom:4px solid rgb(252, 113, 0);
-    width:10%;
-}
-#contact table {
-    width:100%;
-}
-#contact table tr td {
-    width:50%;
-}
-#inner_div table{
-    width:100%;
-}
-#inner_div table tr td{
-    font-weight:bold;
-}
-#inner_table tr td{
-    padding:10px 20px !important;
-}
+/* 
 #contact form {
     width:100%;
 }
@@ -351,28 +409,48 @@ header table {
 #contact form textarea:focus {
     outline:none;
     border-bottom:3px solid rgba(252, 113, 0,1);
-}
+} */
 #address {
     position:relative;
     top:-25px;
     left:30px;
 }
+
+
+
+/* Stopka */
 #footer {
     width:100%;
-    padding:10vh 0px;
-    text-align:center;
-    font-weight:bold;
+    background: #000;
+    color: rgb(126, 126, 126);
+    padding:5px 5px;
+    text-align:right;
+    font-size: 12px;
 }
 #footer a {
     color:rgb(252, 113, 0);
     text-decoration:none;
 }
+
+/* Inne */
+#inner_div table{
+    width:90%;
+}
+#inner_div table tr td{
+    font-weight:bold;
+}
+#inner_table tr td{
+    padding:10px 10px !important;
+}
+
 ::placeholder {
     color:#000;
 }
 button:focus {
     outline:none;
 }
+
+/* Scroll bar */
 ::-webkit-scrollbar {
     width:5px;
     height:5px;
@@ -387,6 +465,7 @@ button:focus {
     background: rgb(252, 113, 0); 
 }
 
+/* Widok mobilny */
 @media (max-width: 1000px){
     #photos {
     columns:1;
@@ -459,7 +538,7 @@ button:focus {
     }
     header {
         width:96vw;
-        background:#fff;
+        background:#000;
         padding:4vh 2vw;
         position:absolute;
     }
@@ -470,6 +549,6 @@ button:focus {
         padding:15px 0px;
     }
     #navigation a {
-        color:#000;
+        color:rgb(252, 113, 0);
     }
 }
