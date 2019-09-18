@@ -25,6 +25,7 @@ if ((width >= 1000)){
 }
 }
 
+
 function magnify(imglink){
     $("#img_here").css("background",`url('${imglink}') center center`);
     $("#magnify").css("display","flex");

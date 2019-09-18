@@ -134,6 +134,41 @@ header table {
 }
 
 /* Ikonki */
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around
+  }
+
+  .flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 400px;
+    height: 225px;
+    margin-top: 10px;
+    margin: auto; 
+    
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+  ul {
+    list-style: none; /* Remove list bullets */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .flex-item2 {
+    margin: auto; 
+  }
+
+
 .social {
     height: 50px;
     width: 50px;
@@ -178,7 +213,7 @@ header table {
 /* O nas */
 #about {
     width:84% !important;
-    height:95vh;
+    height: 100%;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -202,7 +237,6 @@ header table {
 
 #bio {
     width:92vw;
-    height:95vh;
     padding:4vh 4vw 4vh 4vw;
     font-weight:bold;
     text-align: justify;
@@ -210,7 +244,7 @@ header table {
 #bio h1 {
     padding:5px 0px;
     border-bottom:4px solid rgb(252, 113, 0);
-    width:15%;
+    width:20%;
 }
 
 #bio table {
@@ -219,7 +253,7 @@ header table {
 
 #bio table tr td {
     padding: 4vh 2vw 4vh 2vw;
-    text-align:center; !important; 
+    text-align:center !important; 
 }
 #bio img {
     border-radius: 50%;
@@ -236,6 +270,28 @@ header table {
     text-decoration:none;
 }
 
+
+#contact table tr td {
+    padding: 4vh 2vw 4vh 2vw;
+    text-align:center !important; 
+}
+#contact img {
+    border-radius: 50%;
+}
+
+#contact a {
+    padding:4vh 1vw 4vh 1vw !important; 
+    color:#000 !important; 
+    text-decoration:none;
+}
+
+#contact i {
+    color:#000 !important; 
+    text-decoration:none;
+}
+
+
+
 a.anchor {
     display: block;
     position: relative;
@@ -243,22 +299,22 @@ a.anchor {
     visibility: hidden;
 }
 
-/* 
+
 
 #contact {
     padding:4vh 4vw 0vh 4vw;
+    background: rgb(252, 113, 0)
 }
 #contact h1 {
     padding:5px 0px;
-    border-bottom:4px solid rgb(252, 113, 0);
+    padding-top: 100px; 
+    margin-top: -100px;
+    border-bottom:4px solid #000;
     width:10%;
 }
 #contact table {
     width:100%;
 }
-#contact table tr td {
-    width:50%;
-} */
 
 
 
@@ -267,8 +323,7 @@ a.anchor {
     background: #000;
     color: #fff;
     width:92vw;
-    height:95vh;
-    padding:4vh 4vw 0vh 4vw;
+    padding:0vh 4vw 0vh 4vw;
     font-weight:bold;
 }
 #events h1 {
@@ -292,7 +347,6 @@ a.anchor {
 /* Muzyka */
 #music {
     width:92vw;
-    height:88vh;
     padding:4vh 4vw 0vh 4vw;
     font-weight:bold;
 }
@@ -338,7 +392,6 @@ a.anchor {
 /* Zdjecia */
 #photo {
     width:92vw;
-    height:95vh;
     padding:4vh 4vw 0vh 4vw;
     font-weight:bold;
 }
@@ -360,13 +413,50 @@ a.anchor {
 #photos img {
     width:90%;
     height:auto;
-    margin:4.5% 0px;
+    margin:10px;
     transition:0.4s ease-in-out;
 }
 
 #photos img:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+/* Zdjecia - Mozaika */
+#videos {
+    width:100%;
+    height:90%;
+    columns:3;
+    column-gap:5%;
+    z-index:2;
+    transition:0.4s ease-in-out;
+}
+#videos img {
+    width:90%;
+    height:auto;
+    margin:20% 0px;
+    transition:0.4s ease-in-out;
+}
+
+#videos img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#video {
+    width:92vw;
+    padding:4vh 4vw 0vh 4vw;
+    font-weight:bold;
+    
+}
+#video h1 {
+    padding:5px 0px;
+    border-bottom:4px solid rgb(252, 113, 0);
+    width:6%;
+}
+
+#video table {
+    width: 100%;
 }
 
 
@@ -468,7 +558,7 @@ button:focus {
 /* Widok mobilny */
 @media (max-width: 1000px){
     #photos {
-    columns:1;
+    columns:3;
     column-gap:0%;
     }
     #photos img {
@@ -479,6 +569,9 @@ button:focus {
         cursor: pointer;
     }
     #rightImage {
+        display:none;
+    }
+    #black_td {
         display:none;
     }
     #top_part {
@@ -522,19 +615,28 @@ button:focus {
         padding:10px 0px !important;
     }
     #contact form input {
-        width:90%;
+        width:100%;
     }
     #contact form textarea {
-        width:90%;
+        width:100%;
     }
     #work h1 {
-        width:19%;
+        width:100%;
     }
     #bio h1 {
-        width:25%;
+        width:100%;
     }
     #contact h1 {
-        width:33%;
+        width:100%;
+    }
+    #video h1 {
+        width:100%;
+    }
+    #music h1 {
+        width:100%;
+    }
+    #events h1 {
+        width:100%;
     }
     header {
         width:96vw;
@@ -546,7 +648,7 @@ button:focus {
         width:100%;
         display:block;
         text-align:center;
-        padding:15px 0px;
+        padding:15px 10px;
     }
     #navigation a {
         color:rgb(252, 113, 0);

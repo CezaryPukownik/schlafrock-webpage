@@ -27,11 +27,11 @@
             <tr>
                 <td id="logo"><a href="#main"><img src="logo2_small.png"></a></td>
                 <td id="navigation">
-                    <a href="#bio">o nas</a>
-                    <a href="#events">koncetry</a>
+                    <a href="#video">wideo/live</a>
                     <a href="#music">muzyka</a>
+                    <a href="#bio">o nas</a>
                     <a href="#photo">zdjęcia</a>
-                    <a href="#bio">kontakt</a>
+                    <a href="#contact">kontakt</a>
                     <a href="http://schlafrock.cupsell.pl/">sklep</a>
                 </td>
             </tr>
@@ -59,62 +59,112 @@
         </table>
     </div>
     
-    <!-- o nas -->
-    <div id="bio" style="padding-top: 100px; margin-top: -100px;">
-            <h1>a było to tak...</h1>
-                SchlafRock wywodzi się z Poznania. Styl muzyczny to synteza ogólnie pojętego rocka i metalu wraz z hip hopowym wokalem. 
-                Początki zespołu sięgają 2013r. To właśnie w tym roku grupa znajomych została zaproszona do wspólnego grania z inicjatywy Kamila. 
-                Od tamtego czasu zmieniło się prawie wszystko, została tylko nazwa, a z pierwotnego SR pozostał jedynie Kamil. 
-                Skład SchlafRockowej ekipy ewoluował na przestrzeni lat. W 2015r. dołączył Kacper, w 2017r. 
-                Sławek oraz Marcin. To właśnie w 2017r. SchlafRock zaczął przybierać formę jaką dziś znacie. 
-                Pierwsze utwory zaczęły nabierać obecnego brzmienia, co przybliżało wizję wydania pierwszego albumu. 
-                W kwietniu 2018r. zawitaliśmy do Przemka Wejmanna w Perlazza Studio gdzie powstała nasza EPka. 
-                Niedługo później dołączył do nas Czarek dopełniając ekipę SR. 
-                W niezmienionym od tamtej pory składzie tworzymy i gramy dla Was do dziś.
-                29 Październik 2018r. - to właśnie wtedy światło dzienne ujrzał nasz teledysk do kawałka „Rydwan mój”. 
-                Obecnie koncertujemy i pracujemy nad materiałem na kolejny album. 
-            <h1>członkowie</h1>
+        <!-- Wideo -->
+        <div id="video" style="padding-top: 100px; margin-top: -100px;">
+                <h1>wideo/live</h1>
+                <ul class="flex-container">
+                        <li class="flex-item"><div id="rydwan"></div></li>
+                        <li class="flex-item"><div id="making"></div></li>
+                        <li class="flex-item"><div id="studio"></div></li>
+                        <li class="flex-item"><div id="plan_live"></div></li>
+                        <li class="flex-item"><div id="lucky_luke"></div></li>
+                        <li class="flex-item"><div id="zagadka"></div></li>
+                        <li class="flex-item"><div id="plan"></div></li>
+                        <li class="flex-item"><div id="zagadka_live"></div></li>
+                      </ul>
+                <!-- <table>
+                    <tr>
+                        <td><div id="rydwan"></div></td>
+                        <td><div id="lucky_luke"></div></td>
+                        <td><div id="plan_live"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div id="making"></div></td>
+                        <td><div id="studio"></div></td>
+                        <td><div id="zagadka"></div></td>
+                    </tr>
+                </table> -->
+                    
+                    <script>
+                      var tag = document.createElement('script');
+                      tag.src = "https://www.youtube.com/player_api";
+                      var firstScriptTag = document.getElementsByTagName('script')[0];
+                      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                      var player1;
+                      var player2;
+                      var player3;
+                      var player4;
+                      function onYouTubePlayerAPIReady() {
+                        player1 = new YT.Player('rydwan', {
+                          height: '225',
+                          width: '400',
+                          videoId: 'HYl1SAAZMoM'
+                        })
+    
+                        player2 = new YT.Player('making', {
+                        height: '225',
+                        width: '400',
+                        videoId: 'i-eyFb6sL7Y'
+                        })
+    
+                        player3 = new YT.Player('plan_live', {
+                        height: '225',
+                        width: '400',
+                        videoId: 'ZOLxdYoAz6Q'
+                        })
+    
+                        player4 = new YT.Player('lucky_luke', {
+                        height: '225',
+                        width: '400',
+                        videoId: 'w__LaBRcsBQ'
+                        })
+    
+                        player5 = new YT.Player('studio', {
+                        height: '225',
+                        width: '400',
+                        videoId: 'vW-W8x7oEpE'
+                        })
+    
+                        player6 = new YT.Player('zagadka', {
+                        height: '225',
+                        width: '400',
+                        videoId: 'H5So9MXVOS4'
+                        })
+                        player7 = new YT.Player('plan', {
+                        height: '225',
+                        width: '400',
+                        videoId: 'IRZzPpzrn9U'
+                        })
+    
+                        player8 = new YT.Player('zagadka_live', {
+                        height: '225',
+                        width: '400',
+                        videoId: 'cd8SA7_EYRU'
+                        })
+                    }
+                    </script>
+            </div>
+
+       <!-- Muzyka -->
+       <div id="music" style="padding-top: 100px; margin-top: -100px;">
+            <h1>muzyka</h1>
+            <p>
                 <table>
                     <tr>
-                        <td class="animated slideInLeft" style="animation-delay:2s;">
-                                <img src="photos/members/1.jpg" width="200" height="200"><br>
-                                Kacper "Kac3.14" Drzewiczewski
+                        <td id="black_td" class="animated slideInLeft" style="animation-delay:2s;">
+                            <img src="https://i.scdn.co/image/12a526ea906bdba4a1d55e2dc0842398aafa2733">
                         </td>
-                        <td  class="animated slideInLeft" style="animation-delay:2s;">
-                                <img src="photos/members/2.jpg" width="200" height="200"><br>
-                                Kamil "Vento" Nowak
-                        </td>
-                        <td class="animated slideInLeft" style="animation-delay:2s;">
-                                <img src="photos/members/3.jpg" width="200" height="200"><br>
-                                Sławek "Kilaman" Kielmann
-                        </td>
-                        <td  class="animated slideInLeft" style="animation-delay:2s;">
-                                <img src="photos/members/4.jpg" width="200" height="200"><br>
-                                Cezary "Belson" Pukownik
-                        </td>
-                        <td  class="animated slideInLeft" style="animation-delay:2s;">
-                                <img src="photos/members/5.jpg" width="200" height="200"><br>
-                                Marcin "Marjan" Kasperski
+                        <td id="rightImage_music">
+                            <iframe src="https://open.spotify.com/embed/album/1zIFlRvEddMJs5iC1aVARO" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         </td>
                     </tr>
-                </table> 
-                    <!-- Kontakt -->
-            <h1>kontakt</h1>
-            <div id='contact'>
-                <table>
-                        <tr>
-                            <td><i class="fas fa-phone"></i> &nbsp;<a href="tel:+48514677211"> +48 514-677-211</a> </td> 
-                            <td><i class="fas fa-at"></i> &nbsp; <a href="mailto:schlafrockband@gmail.com">schlafrockband@gmail.com</a></td>
-                            <td><i class="fab fa-facebook"></i> &nbsp; <a href="https://www.facebook.com/SchlafRockOFFICIAL/">SchlafRockOFFICIAL</a></td>
-                            <td><i class="fab fa-instagram"></i> &nbsp; <a href="https://www.instagram.com/_schlafrock_/">_schlafrock_</a></td>
-                            <td><i class="fab fa-youtube"></i> &nbsp; <a href="https://www.youtube.com/channel/SchlafRock"">SchlafRock</a></td>
-                        </tr>
-                </table>
-            </div>
-    </div>
+                </table>   
+            </p>
+        </div>
+    
 
-    <!-- Koncerty -->
-    <div id="events" style="padding-top: 100px; margin-top: -100px;">
+    <!-- Koncerty
+    <div id="events">
             <h1>koncerty</h1>
             <p>
                 <table>
@@ -142,48 +192,96 @@
             </p>
     </div>
 
-    <!-- Muzyka -->
-    <div id="music" style="padding-top: 100px; margin-top: -100px;">
-        <h1>muzyka</h1>
-        <p>
-            <table>
-                <tr>
-                    <td id="black_td" class="animated slideInLeft" style="animation-delay:2s;">
-                        <img src="https://i.scdn.co/image/12a526ea906bdba4a1d55e2dc0842398aafa2733">
-                    </td>
-                    <td id="rightImage_music">
-                        <iframe src="https://open.spotify.com/embed/album/1zIFlRvEddMJs5iC1aVARO" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </td>
-                </tr>
-            </table>   
-        </p>
+  -->
+
+
+    
+            <!-- o nas -->
+    <div id="bio" style="padding-top: 100px; margin-top: -100px;">
+            <h1>a było to tak...</h1>
+                SchlafRock wywodzi się z Poznania. Styl muzyczny to synteza ogólnie pojętego rocka i metalu wraz z hip hopowym wokalem. 
+                Początki zespołu sięgają 2013r. To właśnie w tym roku grupa znajomych została zaproszona do wspólnego grania z inicjatywy Kamila. 
+                Od tamtego czasu zmieniło się prawie wszystko, została tylko nazwa, a z pierwotnego SR pozostał jedynie Kamil. 
+                Skład SchlafRockowej ekipy ewoluował na przestrzeni lat. W 2015r. dołączył Kacper, w 2017r. 
+                Sławek oraz Marcin. To właśnie w 2017r. SchlafRock zaczął przybierać formę jaką dziś znacie. 
+                Pierwsze utwory zaczęły nabierać obecnego brzmienia, co przybliżało wizję wydania pierwszego albumu. 
+                W kwietniu 2018r. zawitaliśmy do Przemka Wejmanna w Perlazza Studio gdzie powstała nasza EPka. 
+                Niedługo później dołączył do nas Czarek dopełniając ekipę SR. 
+                W niezmienionym od tamtej pory składzie tworzymy i gramy dla Was do dziś.
+                29 Październik 2018r. - to właśnie wtedy światło dzienne ujrzał nasz teledysk do kawałka „Rydwan mój”. 
+                Obecnie koncertujemy i pracujemy nad materiałem na kolejny album. 
+            <h1>członkowie</h1>
+            <ul class="flex-container">
+                    <li class="flex-item2"> <img src="photos/members/1.jpg" width="200" height="200"><br>Kacper "Kac3.14" Drzewiczewski</li>
+                    <li class="flex-item2"><img src="photos/members/2.jpg" width="200" height="200"><br>Kamil "Vento" Nowak</li>
+                    <li class="flex-item2"><img src="photos/members/3.jpg" width="200" height="200"><br>Sławek "Kilaman" Kielmann</li>
+                    <li class="flex-item2"><img src="photos/members/4.jpg" width="200" height="200"><br>Cezary "Belson" Pukownik</li>
+                    <li class="flex-item2"><img src="photos/members/5.jpg" width="200" height="200"><br>Marcin "Marjan" Kasperski</li>
+                  </ul>
+                <!-- <table>
+                    <tr>
+                        <td class="animated slideInLeft" style="animation-delay:2s;">
+                                <img src="photos/members/1.jpg" width="200" height="200"><br>Kacper "Kac3.14" Drzewiczewski
+                        </td>
+                        <td  class="animated slideInLeft" style="animation-delay:2s;">
+                                <img src="photos/members/2.jpg" width="200" height="200"><br>Kamil "Vento" Nowak
+                        </td>
+                        <td class="animated slideInLeft" style="animation-delay:2s;">
+                                <img src="photos/members/3.jpg" width="200" height="200"><br>Sławek "Kilaman" Kielmann
+                        </td>
+                        <td  class="animated slideInLeft" style="animation-delay:2s;">
+                                <img src="photos/members/4.jpg" width="200" height="200"><br>Cezary "Belson" Pukownik
+                        </td>
+                        <td  class="animated slideInLeft" style="animation-delay:2s;">
+                                <img src="photos/members/5.jpg" width="200" height="200"><br>Marcin "Marjan" Kasperski
+                        </td>
+                    </tr>
+                </table>  -->
+                    <!-- Kontakt -->
+                    
+ 
     </div>
 
     <!-- Zdjęcia -->
     <div id="photo" style="padding-top: 100px; margin-top: -100px;">
         <h1>zdjęcia</h1>
-        <div id="photos">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0002.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0006.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0008.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0009.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0003.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0004.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0005.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0007.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0010.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0011.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0012.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0013.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="photos/0014.jpg">
+            <div id="photos">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0002.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0006.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0008.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0009.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0003.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0004.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0005.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0007.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0010.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0011.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0012.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0013.jpg">
+                <img onclick="magnify($(this).attr('src'))" src="photos/0014.jpg">
+            </div>
         </div>
+    
+
+<div id="contact">
+    <h1 style="">kontakt</h1>
+    <div>
+        <table>
+                <tr>
+                    <td><i class="fas fa-phone"></i> &nbsp;<a href="tel:+48514677211"> +48 514-677-211</a> </td> 
+                    <td><i class="fas fa-at"></i> &nbsp; <a href="mailto:schlafrockband@gmail.com">schlafrockband@gmail.com</a></td>
+                    <td><i class="fab fa-facebook"></i> &nbsp; <a href="https://www.facebook.com/SchlafRockOFFICIAL/">SchlafRockOFFICIAL</a></td>
+                    <td><i class="fab fa-instagram"></i> &nbsp; <a href="https://www.instagram.com/_schlafrock_/">_schlafrock_</a></td>
+                    <td><i class="fab fa-youtube"></i> &nbsp; <a href="https://www.youtube.com/channel/SchlafRock"">SchlafRock</a></td>
+                </tr>
+        </table>
     </div>
+</div>
 
 
-
-    <div id="footer">
+    <!-- <div id="footer">
         on MIT License <a href="https://imfunniee.github.io">imfunniee</a> modified by <a href="https://github.com/CezaryPukownik/">Cezary Pukownik</a>
-    </div>
+    </div> -->
 
     <script src="index.js" type="text/javascript"></script>
 
