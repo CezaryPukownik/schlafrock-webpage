@@ -66,3 +66,60 @@ $(document).ready(function(){
       });
   });
   
+
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  var player1;
+  var player2;
+  var player3;
+  var player4;
+  function onYouTubePlayerAPIReady() {
+    player1 = new YT.Player('rydwan', {
+      height: '225',
+      width: '400',
+      videoId: 'HYl1SAAZMoM'
+    })
+
+    player2 = new YT.Player('making', {
+    height: '225',
+    width: '400',
+    videoId: 'i-eyFb6sL7Y'
+    })
+
+    player3 = new YT.Player('plan_live', {
+    height: '225',
+    width: '400',
+    videoId: 'ZOLxdYoAz6Q'
+    })
+
+    player4 = new YT.Player('lucky_luke', {
+    height: '225',
+    width: '400',
+    videoId: 'w__LaBRcsBQ'
+    })
+
+    player5 = new YT.Player('studio', {
+    height: '225',
+    width: '400',
+    videoId: 'vW-W8x7oEpE'
+    })
+
+    player6 = new YT.Player('zagadka', {
+    height: '225',
+    width: '400',
+    videoId: 'H5So9MXVOS4'
+    })
+    player7 = new YT.Player('lucky_live_2', {
+    height: '225',
+    width: '400',
+    videoId: 'DSpxJycRL7k'
+    })
+
+    player8 = new YT.Player('zagadka_live', {
+    height: '225',
+    width: '400',
+    videoId: 'cd8SA7_EYRU'
+    })
+}
